@@ -1,0 +1,34 @@
+openapi: 3.0.0
+# Added by API Auto Mocking Plugin
+servers:
+  - description: SwaggerHub API Auto Mocking
+    url: https://virtserver.swaggerhub.com/jm-root/jm-wordfilter/1.0.0
+info:
+  version: "1.0.0"
+  title: jm-wordfilter-api
+  description: 敏感词过滤系统API
+paths:
+  /wordfilter/words:
+    get:
+      description: 获取敏感词列表
+      parameters:
+        - name: search
+          in: query
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Word'
+components:
+  schemas:
+    Word:
+      type: object
+      properties:
+        word:
+          type: string
+          example: 'jeff'
+      description: 敏感词信息
