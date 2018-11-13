@@ -26,7 +26,7 @@
   "homepage": "https://github.com/jm-root/jm-wordfilter",
   "dependencies": {
     "config": "^2.0.1",
-    "jm-ms-mongoose": "^1.0.1-beta.1",
+    "jm-ms-mongoose": "^2.0.0",
     "jm-ms-wrapper": "^1.0.1",
     "jm-server": "^2.0.5",
     "mongoose": "^5.3.11"
